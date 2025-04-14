@@ -1,19 +1,23 @@
 pluginManagement {
-  repositories {
-    mavenCentral()
-    gradlePluginPortal()
-  }
-  includeBuild("gradle/build-logic")
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
 }
 
-plugins { id("settings.repo") }
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
 
-rootProject.name = "build-commons"
 
-include("catalog")
+rootProject.name = "kmp-issues"
 
-include("plugins:shared")
+include("shared")
 
-include("plugins:project")
+include("native")
 
-include("plugins:settings")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
