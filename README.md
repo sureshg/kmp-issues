@@ -12,7 +12,7 @@ KMP Issues Repo
   $ cd kmp-issues
   $ ./gradlew build
   
-  # Run the binary
+  # Run the binary on Mac (M1)
   $ native/build/bin/macosArm64/releaseExecutable/native.kexe
       Making a https request...
       {
