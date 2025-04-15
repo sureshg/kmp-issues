@@ -45,6 +45,10 @@ KMP Issues Repo
       at 3   native.kexe                         0x53a253          
   ```
 
+## Issues
+
+- [KTOR-8393](https://youtrack.jetbrains.com/issue/KTOR-8393/Ktor-client-curl-client-engine-TLS-cert-error)
+
 <!-- Badges -->
 
 [java_url]: https://www.azul.com/downloads/?version=java-21-lts&package=jdk#zulu
