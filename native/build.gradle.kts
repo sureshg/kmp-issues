@@ -16,9 +16,8 @@ kotlin {
             executable(setOf(RELEASE)) {
                 entryPoint = "main"
                 if (target.konanTarget.family == Family.LINUX) {
-                    // linkerOpts("-Wl,--as-needed", "-Wl,-Bstatic", "-lz", "-Wl,-Bdynamic")
-                    // freeCompilerArgs += "-Xoverride-konan-properties=linkerGccFlags.linux=-lgcc -lgcc_eh
-                    // -lc"
+                    linkerOpts("-Wl,--as-needed", "-Wl,-Bstatic", "-lz", "-Wl,-Bdynamic")
+                    // freeCompilerArgs += "-Xoverride-konan-properties=linkerGccFlags.linux=-lgcc -lgcc_eh -lc"
                 }
             }
         }
